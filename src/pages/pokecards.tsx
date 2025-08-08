@@ -10,7 +10,7 @@ export default function Pokecards() {
 
     const myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
-    myHeaders.append('X-Api-Key', '1a104ce1-a5da-4cee-ad55-c848b0ac0235');
+    myHeaders.append('X-Api-Key', process.env.REACT_APP_API_KEY as string);
 
     const requestOptions:any = {
         method: "GET",

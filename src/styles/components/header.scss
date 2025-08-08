@@ -1,0 +1,15 @@
+@use '../variables.scss' as *;
+
+header {
+    background: $red;
+    color: $text-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .header-left {
+        img {
+            width: 150px;
+        }
+    }
+}

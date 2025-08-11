@@ -1,4 +1,6 @@
 @use './components/header.scss' as *;
+@use './variables.scss' as *;
+@use './components/pokeDex.scss' as *;
 
 /*--Typography--*/
 @font-face {
@@ -26,4 +28,42 @@ body {
     font-family: 'Quicksand';
     margin: 0;
     padding: 0;
+}
+
+.container {
+    width: 90%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: $screen-sm) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: $screen-xl) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: $screen-xxl) {
+    .container {
+        max-width: 1320px;
+    }
 }

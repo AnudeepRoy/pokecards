@@ -3,10 +3,34 @@ $blue:   #3B4CCA; // Pokémon blue
 $red:  #EC1D24; // Pokéball red
 $gray: #A0A0A0; // Neutral UI text
 $light: #F6F8FC; // Light background
-$dark:  #1A1A1A; // Dark background (night mode)
+$background-dark:  #1A1A1A; // Dark background (night mode)
 $text-dark: #1F1F1F;
 $text-light: #FAFAFA;
+$normal:   #A8A878;
+$fire:     #F08030;
+$water:    #6890F0;
 $electric: #F8D030;
-$water: #6890F0;
-$fire: #F08030;
-$grass: #78C850;
+$grass:    #78C850;
+$ice:      #98D8D8;
+$fighting: #C03028;
+$poison:   #A040A0;
+$ground:   #E0C068;
+$flying:   #A890F0;
+$psychic:  #F85888;
+$bug:      #A8B820;
+$rock:     #B8A038;
+$ghost:    #705898;
+$dragon:   #7038F8;
+$dark:     #705848;
+$steel:    #B8B8D0;
+$fairy:    #EE99AC;
+
+/*--Others--*/
+$border-radius: 15px;
+
+/*--Screen Widths--*/
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;

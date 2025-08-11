@@ -1,0 +1,118 @@
+@use '../variables.scss' as *;
+
+.pokecards {
+    .input-field {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 20px 0 0;
+        gap: 10px;
+        input {
+            width: 50%;
+            border-radius: 8px;
+            height: 50px;
+            font-size: 20px;
+            padding: 0 20px;
+        }
+        button {
+            font-size: 20px;
+            border-radius: 8px;
+            background: $red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    .poke-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        margin: 20px 0 0;
+        .poke-card {
+            border: 1px solid;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.5s;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+            &.normal {
+                border-color: $normal;
+                background: $normal;
+            }
+            &.fire {
+                border-color: $fire;
+                background: $fire;
+            }
+            &.water {
+                border-color: $water;
+                background: $water;
+            }
+            &.electric {
+                border-color: $electric;
+                background: $electric;
+            }
+            &.grass {
+                border-color: $grass;
+                background: $grass;
+            }
+            &.ice {
+                border-color: $ice;
+                background: $ice;
+            }
+            &.fighting {
+                border-color: $fighting;
+                background: $fighting;
+            }
+            &.poison {
+                border-color: $poison;
+                background: $poison;
+            }
+            &.ground {
+                border-color: $ground;
+                background: $ground;
+            }
+            &.flying {
+                border-color: $flying;
+                background: $flying;
+            }
+            &.psychic {
+                border-color: $psychic;
+                background: $psychic;
+            }
+            &.bug {
+                border-color: $bug;
+                background: $bug;
+            }
+            &.rock {
+                border-color: $rock;
+                background: $rock;
+            }
+            &.ghost {
+                border-color: $ghost;
+                background: $ghost;
+            }
+            &.dragon {
+                border-color: $dragon;
+                background: $dragon;
+            }
+            &.dark {
+                border-color: $dark;
+                background: $dark;
+            }
+            &.steel {
+                border-color: $steel;
+                background: $steel;
+            }
+            &.fairy {
+                border-color: $fairy;
+                background: $fairy;
+            }
+        }
+    }
+}

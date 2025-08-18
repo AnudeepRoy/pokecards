@@ -1,15 +1,17 @@
 import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Paper from '@mui/material/Paper';
+import CardActionArea from '@mui/material/CardActionArea';
 
 type cardInfo = {
     name: string,
     image: string,
     types: PokemonType[],
-    setName: (name:string) => void
 }
 
-  type PokemonType = {
+type PokemonType = {
     type: {
         name: string;
     };
@@ -17,15 +19,20 @@ type cardInfo = {
 
 export default function PokeCard({name, image, types}:cardInfo) {
     return (
-        <Card className={`poke-card ${types?.[0].type.name}`} variant="outlined">
-            <CardMedia
-                component="img"
-                image={image}
-                alt={name}
-            />
-            <CardContent>
-                <h4 className="card-title">{name}</h4>
-            </CardContent>
-        </Card>
+        <Box className={`poke-card ${types?.[0].type.name}`}>
+            <Paper elevation={2} className="paper">
+                <Card variant="outlined">
+                    <CardContent>
+                        <CardMedia
+                            component="img"
+                            image={image}
+                            alt={name}
+                        />
+                        
+                        <h4 className="card-title">{name}</h4>
+                        </CardContent>
+                    </Card>
+                </Paper>
+        </Box>
     )
 }

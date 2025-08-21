@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react"
 import { Pagination } from "@mui/material"
 import Grid from '@mui/material/Grid';
+
+import Header from "./header"
 import Box from '@mui/material/Box';
-
-import Header from "./sections/header";
-import BoxElement from "./components/boxElement";
-import PokePagination from "./components/pagination";
-import PokeFilters from "./sections/pokeFilters";
-import PokemonByName from "./sections/pokemonByName";
-import PokemonByType from "./sections/pokemonByType";
-import PokemonByRegion from "./sections/pokemonByRegion";
+import BoxElement from "../components/boxElement";
+import PokePagination from "../components/pagination"
+import PokeFilters from "./pokeFilters";
+import PokemonByName from "./pokemonByName";
+import PokemonByType from "./pokemonByType";
+import PokemonByRegion from "./pokemonByRegion";
 
 
-
-export default function PokeCards() {
+export default function Test() {
 
     type Pokemon = {
         name: string,

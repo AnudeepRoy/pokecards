@@ -13,7 +13,7 @@ type Region = {
 }
 
 export default function PokemonByRegion({ selectedRegion, allRegions }: RegionInfo) {
-    const [pokemon, setPokemon] = useState([]);
+    const [pokemon, setPokemon] = useState<Region[]>([]);
 
     useEffect(() => {
         let regions = [];

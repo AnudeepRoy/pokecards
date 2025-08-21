@@ -7,8 +7,15 @@ type TypeInfo = {
     selectedType: string,
 }
 
+type PokemonEntry = {
+    pokemon: {
+        name: string;
+        url: string;
+    };
+    slot: number;
+};
 export default function PokemonByType({ selectedType }: TypeInfo) {
-    const [pokemon, setPokemon] = useState([]);
+    const [pokemon, setPokemon] = useState<PokemonEntry[]>([]);
     useEffect(() => {
         fetch(`https://pokeapi.co/api/v2/type/${selectedType}`)
         .then(res => res.json())
